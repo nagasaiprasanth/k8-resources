@@ -22,7 +22,7 @@ metadata:
   namespace: roboshop
 subjects:
 - kind: User
-  name: prasanth-roboshop
+  name: prasanth
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
