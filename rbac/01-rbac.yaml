@@ -9,7 +9,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: Role
 metadata:
   namespace: roboshop
-  name: roboshop-admin-role
+  name: prasanth-roboshop-role
 rules:
 - apiGroups: ["*"] # "" indicates the core API group
   resources: ["*"]
@@ -18,13 +18,13 @@ rules:
 apiVersion: rbac.authorization.k8s.io/v1
 kind: RoleBinding
 metadata:
-  name: roboshop-admin-rolebinding
+  name: prasanth-roboshop-rolebinding
   namespace: roboshop
 subjects:
 - kind: User
-  name: roboshop-admin
+  name: prasanth-roboshop
   apiGroup: rbac.authorization.k8s.io
 roleRef:
   kind: Role
-  name: roboshop-admin-role
+  name: prasanth-roboshop-role
   apiGroup: rbac.authorization.k8s.io
